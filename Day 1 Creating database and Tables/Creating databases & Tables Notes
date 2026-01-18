@@ -1,0 +1,82 @@
+
+Commands :
+
+	# Display Datases
+		- show databases ;
+
+	# Creating Databases
+		- create database <name> ; | <name> ---> replace with actual database name
+
+	# Delete Databases
+		- drop Database <name> ;
+
+	# USE database
+		- Use <database name>
+
+	# Display the current database
+		- select database()
+	
+	# Making the tables
+		- Create Table <tablename>
+		(
+			name Varchar(100),
+			age INt
+		)
+
+	# display tables in the current database
+		- show tables
+
+	# display collums of a table
+		- show columns from <database name>
+			or 
+		- desc <database name>
+
+NOTES :
+
+	Tables : the backbone of the database
+		
+		- Columns (headerd)
+
+		- Rows (the actual data)
+
+		# Databases are mad up of a lot of tables 
+
+		Tables DATA Types :
+
+		   - Numeric Types         - String Types 	- Date Types
+			* INT			* Char		    * Date        	
+			* Small INt		* VArchar	    * Datetime
+			* TiNY INT		* BLOB		    * Time Stamp
+
+				± INT = whole Number 
+				
+				± Varchar = variable-length string 
+
+					- Can be assigned a maximum value
+
+		ex :
+
+			username	tweet		Favorite	
+		
+			varchar(15)	varchar(140)      Int
+
+
+	Comments :
+
+		-- To make a comment
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
