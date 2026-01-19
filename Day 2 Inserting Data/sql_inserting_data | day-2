@@ -1,0 +1,77 @@
+
+commands :
+	# insert data in a table
+		insert into <table-name> (name, age) value ('name', 7);
+
+	# retrieve everything from the table
+		select * from <Table-name>
+
+	# Not NULL
+		name varchar(50) <NOT NULL>
+
+	# Defaul value
+
+		name varchar(50) default 'anything you want'
+
+	# primary key
+		name varchar(50) Not Null Primary KEy
+
+	# auto increment P_id
+		cat_id Int Auto_Intcrement,
+		name varchar(50) Not Null 
+		primary key (cat_id)
+
+
+Notes :
+
+	# Null -> value that represent the value is unknown
+	
+		- Null is usually used as the default value
+	
+		- Is not the same as 0
+
+		- Use <NOT Null> in order to make sure a colum have a value
+
+	# Quotes -> most sql tables use single quotes
+
+		- Double quotes can give you an error in other sql versions
+	
+		- use \ to escape the single quotes 
+		
+
+	# Default --> used to set a default values of empty collums
+
+		- original value of a default collum is null
+
+		- you can change it so that eny empty value will have the default value you 			  inputed
+
+		- the value have to match the data type
+
+		- NOT Null and Default can work in tendom
+	
+	# Primary_Key -> unique identifier
+
+		- usually a number and increase with each new row
+
+		- keys can be inserted manualy or the table can automaticaly increment
+
+		- auto_increment goes to the EXTRA ROW
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
