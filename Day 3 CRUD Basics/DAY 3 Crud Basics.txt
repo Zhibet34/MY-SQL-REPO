@@ -1,0 +1,79 @@
+
+commands :
+	
+	# create command :
+	
+		- insert into <tablename>(v1,v2,v3) values(v1,v2,v3)
+
+	# read command :
+
+		- select name from database
+
+		- select name , age from database
+
+		- select * from cats where age = 4
+
+	# Change tabby cats to shorthair:
+
+		- UPDATE cats SET breed='Shorthair' WHERE breed='Tabby';
+
+	# Delete all cats with name of 'Egg
+
+		- DELETE FROM cats WHERE name='Egg';
+
+	# aliases
+		- select name as KiTTY_name from database
+
+
+notes :
+
+	# C.R.U.D operation :
+
+		C - create --> insert 
+
+			- put items into tables
+
+			- insert fileds
+				insert <item> into <table>
+		
+		R - Read --> select
+
+			- select fields 
+				* --> get all the collumns
+
+				collumn_name ---> select the actual collumn
+
+				where --> limit the result of the select
+			
+			- fields can be combined
+			
+		U - Update --> alter the table
+				
+			- Update fields 
+				 update <tableName> set <table row> where <collumn_that_changes>
+
+		D - Delete --> delete information from the table
+			- Delete field
+				delete from <tableName> where <collumn>
+
+	# Aliases - > make data is to read
+
+		- uses the AS key word
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
