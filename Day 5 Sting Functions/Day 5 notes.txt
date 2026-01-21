@@ -1,0 +1,59 @@
+Commands :
+
+
+Notes :
+
+	# STRING FUNCTIONS :
+
+		- concat --> combine data for a cleaner output
+			ex: 
+				Select Concat('h','e','l','o')
+				---> 'hello'
+
+		- concat_ws --> concat with seperator
+		         ex: 
+				Select Concat_ws('+','h','e','l','o')
+				---> 'hello'
+
+		- SUBSTRING --> work with parts of strings
+			ex: 
+				select substring('hello world', 1,4)
+					argumentt <---|.        | |--> end
+							start<--|
+
+				* negative number starts the count backwards
+
+		- Replace --> Replace parts of strings
+			ex: 
+				select replace('hello', '', 'and,)
+		          string to be replace <---|    |     |--> Replacement Item
+						    Item being replace
+
+		- Reverse ---> reverse an item
+				ex: 
+					select replace('hello) ---> olleh
+
+		- char_length ---> number of characters in a string
+
+				* Not the same as length
+
+		- Upper & lower ---> let you convert strings into uppercase or lower case
+
+		- Insert --> enter a string into another string
+			ex:  SELECT INSERT('Hello Bobby', 6, 0, 'There'); 
+
+		- Left ---> get the left most character of a string
+			ex: SELECT LEFT('omghahalol!', 3);
+
+		- right ---> get the right most character of a string
+			ex: SELECT RIGHT('omghahalol!', 4);
+
+		- repeat ---> repeat an action 
+			ex: SELECT REPEAT('ha', 4);
+
+		- trim ---> used to clean white space from the right and left of the argument
+			ex: SELECT TRIM('  pickle  ');
+
+
+			
+	
