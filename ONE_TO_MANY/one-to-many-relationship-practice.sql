@@ -1,0 +1,71 @@
+-- create table students (
+-- 	id int primary key auto_increment,
+--     first_name varchar(50)
+-- );
+
+-- create table papers (
+-- 	id int primary key auto_increment,
+--     title varchar(50),
+--     grade int,
+--     student_id int,
+--     foreign key (student_id) references students(id)
+-- );
+-- INSERT INTO students (first_name) VALUES 
+-- ('Caleb'), ('Samantha'), ('Raj'), ('Carlos'), ('Lisa');
+
+-- INSERT INTO papers (student_id, title, grade ) VALUES
+-- (1, 'My First Book Report', 60),
+-- (1, 'My Second Book Report', 75),
+-- (2, 'Russian Lit Through The Ages', 94),
+-- (2, 'De Montaigne and The Art of The Essay', 98),
+-- (4, 'Borges and Magical Realism', 89);
+
+-- SELECT 
+--     *
+-- FROM
+--     papers;
+--     
+-- SELECT 
+--     first_name, title, grade
+-- FROM
+--     students
+--         JOIN
+--     papers ON papers.student_id = students.id
+-- ORDER BY grade DESC;
+
+-- SELECT 
+--     first_name, title, grade
+-- FROM
+--     students
+--         LEFT JOIN
+--     papers ON papers.student_id = students.id;
+--     
+-- SELECT 
+--     first_name,
+--     IFNULL(title, 'MISSING') AS title,
+--     IFNULL(title, 0) AS grade
+-- FROM
+--     students
+--         LEFT JOIN
+--     papers ON papers.student_id = students.id;
+
+-- SELECT 
+--     first_name, IFNULL(AVG(grade), 0) AS grade
+-- FROM
+--     students
+--         LEFT JOIN
+--     papers ON papers.student_id = students.id
+-- GROUP BY first_name
+-- ORDER BY grade DESC;
+
+-- SELECT 
+--     first_name,
+--     IFNULL(AVG(grade), 0) AS grade,
+--     CASE
+--         WHEN AVG(grade) >= 70 THEN 'PASSING'
+--         ELSE 'FAILING'
+--     END AS passing_status
+-- FROM
+--     students
+-- 		left join
+--         papers on papers.student_id = students.id group by first_name order by grade desc;
